@@ -10,6 +10,13 @@
   <developerConnection>scm:git:https://${scm.user}:${scm.pass}@github.com/riteshmandlik/sample-java-repository.git</developerConnection>
     <tag>v0.0.1</tag>
   </scm>
+  <distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:D:\\internalRepository</url>
+       </repository>
+   </distributionManagement>
   <build>
     <plugins>
       <plugin>
