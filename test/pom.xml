@@ -23,7 +23,7 @@
     </plugins>
   </build>
   <properties>
-  <scm.user>default</scm.user>
-  <scm.pass>default</scm.pass>
+  <scm.user>riteshmandlik</scm.user>
+  <scm.pass>Arya@2009</scm.pass>
   </properties>
 </project>
