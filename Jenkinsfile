@@ -4,8 +4,8 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                def pom = readMavenPom file:'./test/pom.xml'
-                echp pom.version
+                def pom = readMavenPom file:'./test/pom.xml';
+                echo pom.version;
                 }
             }
         }
