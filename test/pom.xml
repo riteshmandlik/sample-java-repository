@@ -5,6 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>test-version</name>
   <description>for version testing</description>
+  <scm>
+  <url>https://github.com/riteshmandlik/sample-java-repository</url>
+  <developerConnection>scm:git:https://${scm.user}:${scm.pass}@github.com/riteshmandlik/sample-java-repository.git</developerConnection>
+  </scm>
   <build>
     <plugins>
       <plugin>
@@ -17,4 +21,8 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+  <scm.user>default</scm.user>
+  <scm.pass>default</scm.pass>
+  </properties>
 </project>
