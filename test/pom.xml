@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com</groupId>
   <artifactId>test</artifactId>
-  <version>0.0.4</version>
+  <version>0.0.5-SNAPSHOT</version>
   <name>test-version</name>
   <description>for version testing</description>
   <scm>
   <url>https://github.com/riteshmandlik/sample-java-repository</url>
   <developerConnection>scm:git:https://${scm.user}:${scm.pass}@github.com/riteshmandlik/sample-java-repository.git</developerConnection>
-    <tag>v0.0.4</tag>
+    <tag>v0.0.1</tag>
   </scm>
   <distributionManagement>
        <repository>
