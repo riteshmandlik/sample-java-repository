@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('test') {
             steps {
+                shell('''
+                    #!/bin/bash
                     mvn -B -D${USER} -D${PASS} -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user=${USER} -dscm.pass=${PASS}
+                    ''')
                 }
             }
         }
