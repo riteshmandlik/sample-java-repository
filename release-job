@@ -1,5 +1,17 @@
 pipeline {
     agent any
+    scm {
+        git {
+            remote {
+                url("https://github.com/riteshmandlik/sample-java-repository")
+                credentials("RITESH_TOKEN")
+            }
+            branch('master')
+            extensions {
+                localBranch('master')
+            }
+        }
+    }
     stages {
         stage('test') {
             steps {
