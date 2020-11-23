@@ -5,18 +5,6 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                scm {
-        git {
-            remote {
-                url("https://github.com/riteshmandlik/sample-java-repository")
-                credentials("RITESH_TOKEN")
-            }
-            branch('master')
-            extensions {
-                localBranch('master')
-            }
-        }
-    }
                     sh "mvn -B -D${USER} -D${PASS} -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user='RITESH_TOKEN' -dscm.pass='RITESH_TOKEN'"
                 }
 
