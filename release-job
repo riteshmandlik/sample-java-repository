@@ -21,7 +21,7 @@ pipeline {
                 }
                 shell('''
                     #!/bin/bash
-                    mvn -B -D${USER} -D${PASS} -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user=${USER} -dscm.pass=${PASS}
+                    mvn -B -D${USER} -D${PASS} -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user="RITESH_TOKEN" -dscm.pass="RITESH_TOKEN"
                     ''')
                 }
             }
