@@ -5,7 +5,7 @@ pipeline {
         stage('test') {
             steps {
                  script {
-                    sh "mvn -B  -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user='RITESH_TOKEN' -Dscm.pass='RITESH_TOKEN'";
+                    mvn -B  -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user='RITESH_TOKEN' -Dscm.pass='RITESH_TOKEN';
                  }
                 }
             }
