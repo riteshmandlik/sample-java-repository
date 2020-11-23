@@ -5,7 +5,7 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                    sh "mvn -B -D'riteshmandlik' -D'Arya@2009' -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user='RITESH_TOKEN' -dscm.pass='RITESH_TOKEN'"
+                    mvn -B -D'riteshmandlik' -D'Arya@2009' -f ./test clean release:clean release:prepare release:perform -DlocalCheckout=true -DdryRun=false -Dscm.user='RITESH_TOKEN' -dscm.pass='RITESH_TOKEN'
                 }
 
                 }
